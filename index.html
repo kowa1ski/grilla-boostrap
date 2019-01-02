@@ -8,16 +8,35 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+
+
+    <!-- Para notar el delimitado de cada columna vamos a marcar un borde en cada una. -->
+    <style media="screen">
+      .col {
+        border: 1px solid blue;
+      }
+    </style>
+
+
+
     <title>Hello, world!</title>
   </head>
   <body>
     <!-- ahora sí dejamos el container por default -->
       <div class="container" style="background: red;">
-        <!-- Vamos a por el tema del grid.
-      Dentro del container vamos a crear siempre filas. Como esta: -->
+      <!-- Para continuar vamos a crear otra row y vamos a variar el número de -->
+      <!-- columnas en cada una para ir jugando con los anchos. -->
         <div class="row">
-          <!-- Vamos a poner un número a cada una para ver qué tal quedan -->
-          <!-- El -sm es opcional y vamos a borrarlo -->
+          <!-- Aquí dejaremos 2 columnas -->
+          <div class="col">
+            1
+          </div>
+          <div class="col">
+            2
+          </div>
+        </div>
+        <!-- Y aquí crearemos otra row con 3 columnas -->
+        <div class="row">
           <div class="col">
             1
           </div>
@@ -27,10 +46,10 @@
           <div class="col">
             3
           </div>
-
         </div>
-        <!-- Y cada una de estas filas consta de 12 columnas -->
       </div>
+      <!-- El resultado es que se aprecia que las columnas sin ancho especificado
+      se están repartiendo a partes iguales el espacio dentro de la fila. -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
